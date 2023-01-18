@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(rgba(113, 233, 201, 0.7), rgb(245, 238, 195),rgb(204, 128, 90));
+    background-repeat: no-repeat;
+}
+.container{
+    background-image: linear-gradient(to left, rgba(128, 128, 128, 0.46),rgba(223, 191, 191, 0.334));
+    box-shadow: 0 0 50px 2px black;
+    border-radius: 50%;
+    height: 300px;
+}
+
+#display{
+    background-color: black;
+    color: rgb(245, 238, 195);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 2px rgba(113, 233, 201, 0.7);
+}
+
+.btn{
+    font-weight: bold;
+    font-size: larger;
+    box-shadow: 0 0 10px 0.1px black;
+    height: 50px;
+    width :100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.511);
+}
