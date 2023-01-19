@@ -1,6 +1,6 @@
-let hour = document.getElementById("hour");
-let minute = document.getElementById("minute");
-let second = document.getElementById("second");
+// let hour = document.getElementById("hour");
+// let minute = document.getElementById("minute");
+// let second = document.getElementById("second");
 let mSec = document.getElementById("milli-second")
 let start = document.getElementById("start");
 let stop = document.getElementById("stop");
@@ -12,11 +12,10 @@ let instanceID;
 function startTimer() {
     if (!counterRunning) {
         counterRunning = true;
-        let c = 0;
         instanceID = setInterval(incMilliSecond, 10);
     }
     else {
-        let c=parseInt(second.innerText);
+        clearInterval(instanceID); // this line is important to handle a case where start button is accidentally clicked more than once
         instanceID = setInterval(incMilliSecond, 10);
     }
 }
@@ -26,9 +25,6 @@ function incMilliSecond() {
     if (mSecCount < 10) {
         mSec.innerText = '0' + mSecCount ;
     }
-    // else if (mSecCount < 100) {
-    //     mSec.innerText = '0' + mSecCount ;
-    // }
     else if (mSecCount < 100) {
         mSec.innerText = mSecCount ;
     }
