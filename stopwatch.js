@@ -1,6 +1,6 @@
-// let hour = document.getElementById("hour");
-// let minute = document.getElementById("minute");
-// let second = document.getElementById("second");
+let hour = document.getElementById("hour");
+let minute = document.getElementById("minute");
+let second = document.getElementById("second");
 let mSec = document.getElementById("milli-second")
 let start = document.getElementById("start");
 let stop = document.getElementById("stop");
